@@ -1,0 +1,18 @@
+{
+    "manifest_version":2,
+    "name":"Who pays the açai",
+    "description":"Find who will pay the açai ",
+    "version":"1.0",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["src/js/main.js", "src/js/vue.js"]
+        }
+    ],
+    "permissions":["tabs"],
+    "browser_action":{
+        "default_popup":"src/index.html",
+        "default_title":"Who pays the açai!"
+    }
+}
