@@ -8,7 +8,7 @@
    <link rel="stylesheet" type="text/css" href="css/style.css">
    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
    <script src="/src/js/vue.js"></script>
-   <title>Who pays the bill</title>
+   <title>Who pays the Açai</title>
 </head>
 <body>
     <div id="app">
@@ -28,14 +28,14 @@
             </div>
             <div v-if="names.length > 1">
                <div class="action_button" @click="showResults">
-                  Check the looser
+                  Check the payer
                </div>
             </div>
         </div>
 
         <div id="result" class="container" v-if="!state">
             <div class="result_container">
-               <h1>The looser is:</h1>
+               <h1>The payer is:</h1>
                <div class="result_value">{{result}}</div>
                <div class="action_button" @click="resetApp">
                   Start Again
